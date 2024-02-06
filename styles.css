@@ -106,11 +106,9 @@ body {
 
 .image-2 {
     position: absolute;
-    top: 50%;
+    top: 20%;
     right: 20px;
-    transform: translateY(-45%);
-        max-width: 500px;
-    z-index: 1;
+
 }
 
 .angry-grid {
@@ -167,12 +165,11 @@ span {
     grid-template-rows: 1fr;
     grid-template-columns: repeat(5, 1fr);    /* Adjusted to 4 columns */
     gap: 1px;
-background-color: darkgray;
-    height: 100%;
+    background-color: rgb(21, 21, 88);
+        height: 100%;
 }
-
 .grid-item {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgb(46, 46, 255);
     /* Dark and transparent background */
     display: flex;
     flex-direction: row;
@@ -180,6 +177,14 @@ background-color: darkgray;
     align-items: center;
     padding: 20px;
     /* Adjust the padding as needed */
+    transition: transform 0.2s ease;
+    /* Add transition for smooth movement */
+    border: black 1px solid;
+}
+
+.grid-item:hover {
+    transform: translateX(20px);
+    /* Adjust the amount of shift as needed */
 }
 
 .grid-item-0 {
@@ -218,7 +223,7 @@ background-color: darkgray;
 }
 
 .grid-item-01{
-    background-color: #5FDA9D;
+    background-color: #219527;
     grid-row-start: 1;
     grid-column-start: 1;
     grid-row-end: 4;
@@ -231,8 +236,8 @@ background-color: darkgray;
 }
 
 .grid-item-1 {
-    background-color: #5FDA9D;
-     grid-row-start: 4;
+    background-color: #219527;
+         grid-row-start: 4;
     grid-column-start: 1;
     grid-row-end: 6;
     grid-column-end: 3;
@@ -244,8 +249,8 @@ background-color: darkgray;
 }
 
 .grid-item-2 {
-    background-color: #5FDA9D;
-    grid-row-start: 1;
+    background-color: #219527;
+        grid-row-start: 1;
     grid-column-start: 3;
     grid-row-end: 6;
     grid-column-end: 5;
@@ -257,8 +262,8 @@ background-color: darkgray;
 }
 
 .grid-item-3 {
-    background-color: #5FDA9D;
-        grid-row-start: 1;
+    background-color: #219527;
+            grid-row-start: 1;
     grid-column-start: 5;
     grid-row-end: 4;
     grid-column-end: 7;
@@ -270,8 +275,8 @@ background-color: darkgray;
 }
 
 .grid-item-4 {
-    background-color: #5FDA9D;
-        grid-row-start: 4;
+    background-color: #219527;
+            grid-row-start: 4;
     grid-column-start: 5;
     grid-row-end: 6;
     grid-column-end: 7;
@@ -298,6 +303,7 @@ img {
     grid-template-columns: repeat(8, 1fr);
     gap: 1px;
     height: 100%;
+    background-color: #311438;
 }
 
 .personalized-item {
@@ -306,78 +312,67 @@ img {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    border: black 1px solid;
+}
+
+#personalized-item-0:hover,
+#personalized-item-1:hover,
+#personalized-item-4:hover {
+    transform: translateY(0);
+    /* No slide-up for these items */
+}
+
+.personalized-item:hover:not(#personalized-item-0):not(#personalized-item-1):not(#personalized-item-4) {
+    transform: translateY(calc(100% - 40%));
+}
+
+#personalized-item-0,
+#personalized-item-1,
+#personalized-item-2,
+#personalized-item-3,
+#personalized-item-4 {
+    background-color: #a509c8;
 }
 
 #personalized-item-0 {
-    background-color: #a509c8;
-    grid-row-start: 1;
-    grid-column-start: 1;
-    grid-row-end: 5;
-    grid-column-end: 5;
+    grid-row: 1 / span 4;
+    grid-column: 1 / span 4;
 }
 
 #personalized-item-1 {
-    background-color: #a509c8;
-        grid-row-start: 5;
-    grid-column-start: 1;
-    grid-row-end: 7;
-    grid-column-end: 5;
+    grid-row: 5 / span 2;
+    grid-column: 1 / span 4;
 }
 
 #personalized-item-2 {
-    background-color: #a509c8;
-        grid-row-start: 1;
-    grid-column-start: 5;
-    grid-row-end: 3;
-    grid-column-end: 9;
+    grid-row: 1 / span 2;
+    grid-column: 5 / span 4;
 }
 
 #personalized-item-3 {
-    background-color: #a509c8;
-        grid-row-start: 3;
-    grid-column-start: 5;
-    grid-row-end: 5;
-    grid-column-end: 9;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    grid-row: 3 / span 2;
+    grid-column: 5 / span 4;
 }
 
 #personalized-item-4 {
-    background-color: #a509c8;
-        grid-row-start: 5;
-    grid-column-start: 5;
-    grid-row-end: 7;
-    grid-column-end: 9;
+    grid-row: 5 / span 2;
+    grid-column: 5 / span 4;
 }
 
 .personalized-img {
     max-width: 10%;
     height: auto;
 }
-
-.small-header {
-    font-size: 14px;
-    color: #fff;
-}
-
-.large-header {
-    font-size: 24px;
-    color: #fff;
-}
-
-.header-text {
-    font-size: 20px;
-    color: #fff;
-}
-
 .learning-grid {
     display: grid;
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: repeat(11, 1fr);
     gap: 1px;
     height: 100%;
+    background-color: rgb(1, 15, 68);
 }
 
 .learning-item {
@@ -386,8 +381,9 @@ img {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color: #ADD8E6;
+    background-color: #14185d;
     /* Light Blue color */
+    transition: transform 0.99s ease;
 }
 
 #learning-item-0 {
@@ -440,12 +436,28 @@ img {
     /* Black color */
 }
 
+#learning-item-0:hover {
+    transform: translate(-8%, -8%);
+}
+
+#learning-item-1:hover {
+    transform: translate(-8%, 8%);
+}
+
+#learning-item-2:hover {
+    transform: translate(8%, -8%);
+}
+
+#learning-item-3:hover {
+    transform: translate(8%, 8%);
+}
 .playful-grid {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: repeat(8, 1fr);
     gap: 1px;
     height: 100%;
+        background-color: #fdd25b;
 }
 
 .fun-item {
@@ -454,10 +466,12 @@ img {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    transition: transform 0.999s ease;
+    /* Added transition for smooth movement */
 }
 
 #fun-item-0 {
-    background-color: #FCE883;
+    background-color: #cb9500;
     /* Yellow color */
     grid-row-start: 1;
     grid-column-start: 1;
@@ -466,25 +480,33 @@ img {
 }
 
 #fun-item-1 {
-    background-color: #FCE883;
+    background-color: #cb9500;
     grid-row-start: 1;
     grid-column-start: 6;
     grid-row-end: 3;
     grid-column-end: 9;
 }
 
+#fun-item-0:hover~#fun-item-1 {
+    transform: translateX(20%);
+    /* Shift item-1 to the right */
+}
+
 .funky-header {
     font-size: 24px;
-    color: #ffffff;    /* Black color */
+    color: #ffffff;
+    /* Black color */
 }
 
 .cool-text {
     font-size: 16px;
-    color: #ffffff;    /* Black color */
+    color: #ffffff;
+    /* Black color */
 }
 
 .quirky-arrow {
     font-size: 24px;
-    color: #ffffff;    /* Black color */
+    color: #ffffff;
+    /* Black color */
     cursor: pointer;
 }
