@@ -8,7 +8,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(38, 38, 38, 0);
     color: white;
     padding: 10px;
 }
@@ -220,71 +220,53 @@ span {
     grid-template-columns: repeat(6, 1fr);
     gap: 1px;
     height: 100%;
+    background-color: #0c5505;
 }
 
-.grid-item-01{
-    background-color: #219527;
-    grid-row-start: 1;
-    grid-column-start: 1;
-    grid-row-end: 4;
-    grid-column-end: 3;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-.grid-item-1 {
-    background-color: #219527;
-         grid-row-start: 4;
-    grid-column-start: 1;
-    grid-row-end: 6;
-    grid-column-end: 3;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-.grid-item-2 {
-    background-color: #219527;
-        grid-row-start: 1;
-    grid-column-start: 3;
-    grid-row-end: 6;
-    grid-column-end: 5;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-.grid-item-3 {
-    background-color: #219527;
-            grid-row-start: 1;
-    grid-column-start: 5;
-    grid-row-end: 4;
-    grid-column-end: 7;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
+.grid-item-01,
+.grid-item-1,
+.grid-item-3,
 .grid-item-4 {
-    background-color: #219527;
-            grid-row-start: 4;
-    grid-column-start: 5;
-    grid-row-end: 6;
-    grid-column-end: 7;
+    background-color: #32aa38;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.grid-item-01,
+.grid-item-1 {
+    grid-row-start: span 3;
+    grid-column-start: span 2;
+}
+
+.grid-item-3,
+.grid-item-4 {
+    grid-row-start: span 2;
+    grid-column-start: span 2;
+}
+
+.grid-item-01,
+.grid-item-3 {
+    transition: transform 0.99s;
+}
+
+.grid-item-1,
+.grid-item-4 {
+    transition: transform 0.99s;
+}
+
+.grid-item-01:hover,
+.grid-item-3:hover {
+    transform: perspective(1000px) rotateY(-30deg);
+}
+
+.grid-item-1:hover,
+.grid-item-4:hover {
+    transform: perspective(1000px) rotateY(40deg);
 }
 
 img {
@@ -297,6 +279,16 @@ img {
     color: #fff;
 }
 
+.grid-item-2 {
+    background-color: #32aa38;
+        grid-row-start: span 5;
+    grid-column-start: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
 .personalized-grid {
     display: grid;
     grid-template-rows: repeat(6, 1fr);
@@ -314,7 +306,7 @@ img {
     padding: 20px;
     position: relative;
     overflow: hidden;
-    transition: transform 0.5s ease;
+    transition: transform 0.99s ease;
     border: black 1px solid;
 }
 
@@ -322,7 +314,6 @@ img {
 #personalized-item-1:hover,
 #personalized-item-4:hover {
     transform: translateY(0);
-    /* No slide-up for these items */
 }
 
 .personalized-item:hover:not(#personalized-item-0):not(#personalized-item-1):not(#personalized-item-4) {
