@@ -166,25 +166,24 @@ span {
     grid-template-columns: repeat(5, 1fr);    /* Adjusted to 4 columns */
     gap: 1px;
     background-color: rgb(21, 21, 88);
-        height: 100%;
+        height: 56600%;
 }
-.grid-item {
+.grid-item,
+.grid-item_1,
+.grid-item_2 {
     background-color: rgb(46, 46, 255);
-    /* Dark and transparent background */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    /* Adjust the padding as needed */
-    transition: transform 0.2s ease;
-    /* Add transition for smooth movement */
-    border: black 1px solid;
+    transition: transform 0.99s ease;
+    border: rgb(12, 15, 206) 1px solid;
 }
 
-.grid-item:hover {
-    transform: translateX(20px);
-    /* Adjust the amount of shift as needed */
+.grid-item_1:hover,
+.grid-item_2:hover{
+    transform: translateX(50px);
 }
 
 .grid-item-0 {
@@ -209,86 +208,145 @@ span {
     /* Learn More text color */
 }
 
-.arrow {
+.arrow1 {
     margin-left: 5px;
     /* Adjust spacing between text and arrow */
 }
 
-.custom-grid {
+.colorful-grid {
     display: grid;
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 1px;
     height: 100%;
-    background-color: #0c5505;
+    background-color: #476b16;
+    perspective: 100cap;
 }
 
-.grid-item-01,
-.grid-item-1,
-.grid-item-3,
-.grid-item-4 {
-    background-color: #32aa38;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    position: relative;
-    overflow: hidden;
+.item-leaf {
+    background-color: #7fc027; 
+       grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 5;
+    grid-column-end: 4;
+    height: 400px;
 }
 
-.grid-item-01,
-.grid-item-1 {
-    grid-row-start: span 3;
-    grid-column-start: span 2;
+.item-stem {
+    background-color: #7fc027;
+        grid-row-start: 5;
+    grid-column-start: 1;
+    grid-row-end: 9;
+    grid-column-end: 4;
+        height: 400px;
 }
 
-.grid-item-3,
-.grid-item-4 {
-    grid-row-start: span 2;
-    grid-column-start: span 2;
+.item-petal {
+    background-color: #7fc027;
+        grid-row-start: 1;
+    grid-column-start: 4;
+    grid-row-end: 9;
+    grid-column-end: 7;
 }
 
-.grid-item-01,
-.grid-item-3 {
-    transition: transform 0.99s;
+.item-sun {
+    background-color: #7fc027;
+        grid-row-start: 1;
+    grid-column-start: 7;
+    grid-row-end: 5;
+    grid-column-end: 10;
+        height: 400px;
 }
 
-.grid-item-1,
-.grid-item-4 {
-    transition: transform 0.99s;
+.item-flower {
+    background-color: #7fc027;
+    grid-row-start: 5;
+    grid-column-start: 7;
+    grid-row-end: 9;
+    grid-column-end: 10;
+        height: 400px;
 }
 
-.grid-item-01:hover,
-.grid-item-3:hover {
-    transform: perspective(1000px) rotateY(-30deg);
+.colorful-grid .content {
+    text-align: center;
 }
 
-.grid-item-1:hover,
-.grid-item-4:hover {
-    transform: perspective(1000px) rotateY(40deg);
-}
-
-img {
+.colorful-grid img {
     max-width: 100%;
-    height: auto;
+    display: block;
+    margin: 0 auto;
+        padding-top: 155px;
 }
 
 .item-header {
-    margin-bottom: 10px;
-    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 0;
 }
 
-.grid-item-2 {
-    background-color: #32aa38;
-        grid-row-start: span 5;
-    grid-column-start: span 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+.item-header-2{
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-top: 300px;
 }
+
+.explore-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.explore-link:hover {
+    background-color: #ffaa00;
+}
+
+.arrow {
+    display: inline-block;
+    margin-left: 5px;
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    padding: 3px;
+    transform: rotate(-45deg);
+}
+
+.item-leaf,
+.item-stem,
+.item-sun,
+.item-flower {
+    position: relative;
+    transition: 0.9s;
+    transform-origin: left;
+}
+
+.item-leaf:hover,
+.item-stem:hover {
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(-16deg) translateZ(-40px) translateX(-40px) translateY(0px);
+    border-right: 1px solid rgb(144, 223, 32);
+    border-left: 1px solid rgb(144, 223, 32);
+        border-top: 1px solid rgb(144, 223, 32);
+    z-index: 1;
+}
+
+.item-sun:hover,
+.item-flower:hover {
+    transform-style: preserve-3d;
+    transform:rotateX(-1deg) rotateY(15deg) translateZ(84px) translateX(18px) translateY(0px) ;
+        border-right: 1px solid rgb(144, 223, 32);
+            border-left: 1px solid rgb(144, 223, 32);
+            border-top:1px solid rgb(144, 223, 32);
+            border-bottom: 1px solid rgb(144, 223, 32) ;
+        z-index: 1;
+}
+.item-leaf .content,
+.item-stem .content {
+    backface-visibility: hidden;
+}
+
+
 .personalized-grid {
     display: grid;
     grid-template-rows: repeat(6, 1fr);
@@ -296,6 +354,8 @@ img {
     gap: 1px;
     height: 100%;
     background-color: #311438;
+    perspective: 100cap;
+    z-index: -1;
 }
 
 .personalized-item {
@@ -308,6 +368,7 @@ img {
     overflow: hidden;
     transition: transform 0.99s ease;
     border: black 1px solid;
+        z-index: -1;
 }
 
 #personalized-item-0:hover,
@@ -448,7 +509,7 @@ img {
     grid-template-columns: repeat(8, 1fr);
     gap: 1px;
     height: 100%;
-        background-color: #fdd25b;
+        background-color: #df8e00;
 }
 
 .fun-item {
@@ -462,7 +523,7 @@ img {
 }
 
 #fun-item-0 {
-    background-color: #cb9500;
+    background-color: rgb(255,196, 39);
     /* Yellow color */
     grid-row-start: 1;
     grid-column-start: 1;
@@ -471,8 +532,8 @@ img {
 }
 
 #fun-item-1 {
-    background-color: #cb9500;
-    grid-row-start: 1;
+    background-color: rgb(255, 196, 39);
+        grid-row-start: 1;
     grid-column-start: 6;
     grid-row-end: 3;
     grid-column-end: 9;
@@ -480,7 +541,6 @@ img {
 
 #fun-item-0:hover~#fun-item-1 {
     transform: translateX(20%);
-    /* Shift item-1 to the right */
 }
 
 .funky-header {
