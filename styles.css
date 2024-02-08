@@ -346,78 +346,173 @@ span {
     backface-visibility: hidden;
 }
 
-
-.personalized-grid {
-    display: grid;
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-columns: repeat(8, 1fr);
-    gap: 1px;
-    height: 100%;
-    background-color: #311438;
-    perspective: 100cap;
-    z-index: -1;
-}
-
-.personalized-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.99s ease;
-    border: black 1px solid;
-        z-index: -1;
-}
-
-#personalized-item-0:hover,
-#personalized-item-1:hover,
-#personalized-item-4:hover {
-    transform: translateY(0);
-}
-
-.personalized-item:hover:not(#personalized-item-0):not(#personalized-item-1):not(#personalized-item-4) {
-    transform: translateY(calc(100% - 40%));
-}
-
-#personalized-item-0,
-#personalized-item-1,
-#personalized-item-2,
-#personalized-item-3,
-#personalized-item-4 {
-    background-color: #a509c8;
-}
-
-#personalized-item-0 {
-    grid-row: 1 / span 4;
-    grid-column: 1 / span 4;
-}
-
-#personalized-item-1 {
-    grid-row: 5 / span 2;
-    grid-column: 1 / span 4;
-}
-
-#personalized-item-2 {
-    grid-row: 1 / span 2;
-    grid-column: 5 / span 4;
-}
-
-#personalized-item-3 {
-    grid-row: 3 / span 2;
-    grid-column: 5 / span 4;
-}
-
-#personalized-item-4 {
-    grid-row: 5 / span 2;
-    grid-column: 5 / span 4;
-}
-
-.personalized-img {
-    max-width: 10%;
+.col-2 {
     height: auto;
+    background-color: #3c142d;
+    color: #fff;
+    border-bottom: 1px solid #1a1919;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    z-index: 999;
 }
+
+.col-2right1 {
+    background-color: #972169;
+    grid-column: auto / span 2;
+    grid-row: auto / span 2;
+    border-right: 1px solid #1a1919;
+    border-bottom: 1px solid #1a1919;
+    text-align: center;
+    align-items: center;
+    padding-top: 200px;
+}
+
+.col-2right1 h3 {
+    font-size: 25px;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
+.col-2right1 h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.col-2right1 p {
+    font-size: 40px;
+    font-weight: 100;
+    color: #1a1919;
+}
+
+.col-2left1 {
+    background-color: #972169;
+    grid-column: auto / span 2;
+    display: flex;
+    padding: 30px;
+    padding-left: 50px;
+    border-bottom: 1px solid #1a1919;
+}
+
+.image img {
+    height: 180px;
+    width: 140px;
+}
+
+.text {
+    padding-top: 30px;
+    padding-right: 10px;
+    padding-left: 15px;
+}
+
+.text h2 {
+    font-size: 28px;
+    text-transform: capitalize;
+}
+
+.text p {
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-top: 15px;
+}
+
+.col-2left2 {
+    background-color: #972169;
+    grid-column: auto / span 2;
+    border-bottom: 1px solid #1a1919;
+    font-size: 28px;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding: 100px;
+    height: 60px;
+    overflow: hidden;
+}
+
+.col-2left2:hover .whitepaper1 {
+    display: none;
+}
+
+.whitepaper2 {
+    top: 200%;
+    position: relative;
+    transition: 0.3s;
+    height: 50%;
+}
+
+.col-2left2:hover .whitepaper2 {
+    top: 0;
+}
+
+.whitepaper2 p {
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.col-2left3 {
+    background-color: #972169;
+    border-right: 1px solid #1a1919;
+    grid-column: auto / span 2;
+    text-transform: uppercase;
+    font-size: 28px;
+    padding: 100px;
+    padding-left: 250px;
+    height: 140px;
+    overflow: hidden;
+}
+
+.business {
+    top: 200%;
+    position: relative;
+    transition: 0.3s;
+    height: 50%;
+}
+
+.col-2left3:hover .business {
+    top: 0;
+}
+
+.business p {
+    color: #fff;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.col-2left3:hover .new2 {
+    display: none;
+}
+
+.col-2right2 {
+    background-color: #972169;
+    border-right: 1px solid #1a1919;
+    grid-column: auto / span 2;
+    text-transform: uppercase;
+    font-size: 28px;
+    padding: 80px;
+    padding-left: 100px;
+    overflow: hidden;
+}
+
+.certification {
+    top: 200%;
+    position: relative;
+    transition: 0.3s;
+    height: 50%;
+}
+
+.col-2right2:hover .certification {
+    top: 0;
+}
+
+.certification p {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.col-2right2:hover .blog {
+    display: none;
+}
+
 .learning-grid {
     display: grid;
     grid-template-rows: repeat(6, 1fr);
