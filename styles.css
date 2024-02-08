@@ -123,13 +123,11 @@ body {
 #item-0,
 #item-1 {
     background-color: rgba(0, 0, 0, 0.8);
-    /* Dark and transparent background */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    /* Adjust the padding as needed */
 }
 
 .angry-grid img {
@@ -140,7 +138,6 @@ body {
 .content {
     text-align: right;
     color: #fff;
-    /* Text color */
 }
 
 h2 {
@@ -149,21 +146,18 @@ h2 {
 
 p {
     cursor: pointer;
-    /* Add a pointer cursor for the Learn More section */
     color: #fff;
-    /* Learn More text color */
 }
 
 span {
     margin-left: 5px;
-    /* Adjust spacing between text and arrow */
 }
 
 
 .grid-container {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: repeat(5, 1fr);    /* Adjusted to 4 columns */
+    grid-template-columns: repeat(5, 1fr);    
     gap: 1px;
     background-color: rgb(21, 21, 88);
         height: 56600%;
@@ -188,13 +182,11 @@ span {
 
 .grid-item-0 {
     grid-column-end: span 2;
-    /* Spanning 2 columns */
 }
 
 .item-content {
     text-align: right;
     color: #fff;
-    /* Text color */
 }
 
 .item-header {
@@ -203,14 +195,11 @@ span {
 
 .learn-more {
     cursor: pointer;
-    /* Add a pointer cursor for the Learn More section */
     color: #fff;
-    /* Learn More text color */
 }
 
 .arrow1 {
     margin-left: 5px;
-    /* Adjust spacing between text and arrow */
 }
 
 .colorful-grid {
@@ -346,7 +335,7 @@ span {
     backface-visibility: hidden;
 }
 
-.col-2 {
+.purple-section {
     height: auto;
     background-color: #3c142d;
     color: #fff;
@@ -356,7 +345,7 @@ span {
     z-index: 999;
 }
 
-.col-2right1 {
+.purple-section-right1 {
     background-color: #972169;
     grid-column: auto / span 2;
     grid-row: auto / span 2;
@@ -367,26 +356,26 @@ span {
     padding-top: 200px;
 }
 
-.col-2right1 h3 {
+.purple-section-right1 h3 {
     font-size: 25px;
     font-weight: 100;
     text-transform: uppercase;
     padding-bottom: 5px;
 }
 
-.col-2right1 h1 {
+.purple-section-right1 h1 {
     font-size: 50px;
     font-weight: bolder;
     text-transform: uppercase;
 }
 
-.col-2right1 p {
+.purple-section-right1 p {
     font-size: 40px;
     font-weight: 100;
     color: #1a1919;
 }
 
-.col-2left1 {
+.purple-section-left1 {
     background-color: #972169;
     grid-column: auto / span 2;
     display: flex;
@@ -417,7 +406,7 @@ span {
     padding-top: 15px;
 }
 
-.col-2left2 {
+.purple-section-left2 {
     background-color: #972169;
     grid-column: auto / span 2;
     border-bottom: 1px solid #1a1919;
@@ -429,7 +418,7 @@ span {
     overflow: hidden;
 }
 
-.col-2left2:hover .whitepaper1 {
+.purple-section-left2:hover .whitepaper1 {
     display: none;
 }
 
@@ -440,7 +429,7 @@ span {
     height: 50%;
 }
 
-.col-2left2:hover .whitepaper2 {
+.purple-section-left2:hover .whitepaper2 {
     top: 0;
 }
 
@@ -449,7 +438,7 @@ span {
     text-transform: capitalize;
 }
 
-.col-2left3 {
+.purple-section-left3 {
     background-color: #972169;
     border-right: 1px solid #1a1919;
     grid-column: auto / span 2;
@@ -468,7 +457,7 @@ span {
     height: 50%;
 }
 
-.col-2left3:hover .business {
+.purple-section-left3:hover .business {
     top: 0;
 }
 
@@ -478,11 +467,11 @@ span {
     text-transform: capitalize;
 }
 
-.col-2left3:hover .new2 {
+.purple-section-left3:hover .new2 {
     display: none;
 }
 
-.col-2right2 {
+.purple-section-right2 {
     background-color: #972169;
     border-right: 1px solid #1a1919;
     grid-column: auto / span 2;
@@ -500,7 +489,7 @@ span {
     height: 50%;
 }
 
-.col-2right2:hover .certification {
+.purple-section-right2:hover .certification {
     top: 0;
 }
 
@@ -509,7 +498,7 @@ span {
     text-transform: capitalize;
 }
 
-.col-2right2:hover .blog {
+.purple-section-right2:hover .blog {
     display: none;
 }
 
@@ -529,7 +518,6 @@ span {
     align-items: center;
     padding: 20px;
     background-color: #14185d;
-    /* Light Blue color */
     transition: transform 0.99s ease;
 }
 
@@ -580,7 +568,6 @@ span {
 .big-header {
     font-size: 36px;
     color: #ffffff;
-    /* Black color */
 }
 
 #learning-item-0:hover {
@@ -614,7 +601,6 @@ span {
     align-items: center;
     padding: 20px;
     transition: transform 0.999s ease;
-    /* Added transition for smooth movement */
 }
 
 #fun-item-0 {
