@@ -627,18 +627,92 @@ span {
 .funky-header {
     font-size: 24px;
     color: #ffffff;
-    /* Black color */
 }
 
 .cool-text {
     font-size: 16px;
     color: #ffffff;
-    /* Black color */
 }
 
 .quirky-arrow {
     font-size: 24px;
     color: #ffffff;
-    /* Black color */
     cursor: pointer;
+}
+
+footer {
+    height: auto;
+    background-color: black;
+    width: 100%;
+    color: #989885;
+    display: flex;
+}
+
+.left-footer ul {
+    display: flex;
+    padding: 20px;
+}
+
+.left-footer li {
+    list-style-type: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding-right: 5px;
+    padding-left: 10px;
+    border-right: 1px solid #989885;
+    text-transform: capitalize;
+    margin: 2px;
+}
+
+.left-footer li:last-of-type {
+    border: none;
+}
+
+.left-footer li:hover {
+    color: #fff;
+}
+
+.socials {
+    height: 30px;
+    width: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    width: 6%;
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.socials img {
+    filter: grayscale(10);
+}
+
+.socials img:hover {
+    filter: brightness(2);
+}
+
+.policies {
+    padding-left: 300px;
+    padding-top: 10px;
+}
+
+.policies ul {
+    display: flex;
+}
+
+.policies li {
+    list-style-type: none;
+    margin-left: 10px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.policies li:hover {
+    color: #fff;
+}
+
+.policies p {
+    font-size: 14px;
+    padding-top: 5px;
 }
