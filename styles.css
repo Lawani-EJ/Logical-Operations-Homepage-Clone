@@ -158,26 +158,27 @@ span {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(5, 1fr);    
-    gap: 1px;
-    background-color: rgb(21, 21, 88);
-        height: 56600%;
+    gap: 0.1px;
+    background-color: rgb(44, 95, 140);
+            perspective: 100000cap;
 }
 .grid-item,
 .grid-item_1,
 .grid-item_2 {
-    background-color: rgb(46, 46, 255);
+    background-color: #009DDC;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 67px;
     transition: transform 0.999s ease;
-    border: rgb(12, 15, 206) 1px solid;
+    border: #34454c 1px solid;
+        z-index: 2;
 }
 
 .grid-item_1:hover,
 .grid-item_2:hover{
-    transform: translateX(50px);
+    transform: translateX(100px);
 }
 
 .grid-item-0 {
@@ -445,6 +446,7 @@ span {
     padding-left: 250px;
     height: 140px;
     overflow: hidden;
+        z-index: 2;
 }
 
 .business {
@@ -477,6 +479,7 @@ span {
     padding: 80px;
     padding-left: 100px;
     overflow: hidden;
+        z-index: 2;
 }
 
 .certification {
@@ -513,9 +516,11 @@ span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 80px;
     background-color: #009DDC;
     transition: transform 0.99s ease;
+     border: #1b1d1e 1pt solid;
+     z-index: 1;
 }
 
 #learning-item-0 {
@@ -598,6 +603,7 @@ span {
     align-items: center;
     padding: 20px;
     transition: transform 0.999s ease;
+    z-index: 1;
 }
 
 #fun-item-0 {
