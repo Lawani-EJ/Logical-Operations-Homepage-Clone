@@ -171,7 +171,7 @@ span {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    transition: transform 0.99s ease;
+    transition: transform 0.999s ease;
     border: rgb(12, 15, 206) 1px solid;
 }
 
@@ -281,16 +281,13 @@ span {
 .explore-link {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ffcc00;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 10px;
+    font-size: larger;
 }
 
-.explore-link:hover {
-    background-color: #ffaa00;
-}
 
 .arrow {
     display: inline-block;
@@ -425,7 +422,7 @@ span {
 .whitepaper2 {
     top: 200%;
     position: relative;
-    transition: 0.3s;
+    transition: 0.8s;
     height: 50%;
 }
 
@@ -453,7 +450,7 @@ span {
 .business {
     top: 200%;
     position: relative;
-    transition: 0.3s;
+    transition: 0.8s;
     height: 50%;
 }
 
@@ -485,7 +482,7 @@ span {
 .certification {
     top: 200%;
     position: relative;
-    transition: 0.3s;
+    transition: 0.8s;
     height: 50%;
 }
 
@@ -508,7 +505,7 @@ span {
     grid-template-columns: repeat(11, 1fr);
     gap: 1px;
     height: 100%;
-    background-color: rgb(1, 15, 68);
+    background-color: #14185d;
 }
 
 .learning-item {
@@ -517,7 +514,7 @@ span {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color: #14185d;
+    background-color: #009DDC;
     transition: transform 0.99s ease;
 }
 
@@ -605,7 +602,6 @@ span {
 
 #fun-item-0 {
     background-color: rgb(255,196, 39);
-    /* Yellow color */
     grid-row-start: 1;
     grid-column-start: 1;
     grid-row-end: 3;
@@ -716,3 +712,4 @@ footer {
     font-size: 14px;
     padding-top: 5px;
 }
+
