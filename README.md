@@ -38,7 +38,7 @@
 🙏 This project was created by Lawani Elyon John.
 
 ```bash
-git clone https://github.com/yourusername/logiacal-operations-website.git
+git clone https://github.com/Lawani-EJ/Logical-Operations-Homepage-Clone.git
 cd logiacal-operations-website 
 
 
