@@ -19,13 +19,14 @@
 ## Screenshots
 
 📷 Here are some screenshots of the website:
+![Alt text](./images/Screenshot1.png)
+![Alt text](./images/Screenshot2.png)
+![Alt text](./images/Screenshot3.png)
 
-- Navigation Bar
-- Big Background Section
-- Angry Grid
-- Grid Container
-- Colourful Grid
-- Purple Section
+## 🎥 Screen Recordings
+
+![Browsing Music GIF]()
+
 
 ## How to Use
 
