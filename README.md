@@ -25,7 +25,7 @@
 
 ## 🎥 Screen Recordings
 
-![Browsing Music GIF]()
+![Browsing GIF](./images/Screenrecord1-ezgif.com-video-to-gif-converter.gif)
 
 
 ## How to Use
