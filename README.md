@@ -12,7 +12,7 @@
 
 - Responsive navigation bar with a logo, language selector, menu options, and a schedule consultation button.
 - Big background section with captivating text and call-to-action buttons.
-- Grid layout showcasing various sections of the website, including courseware cata-logue, data science learning path, newsletter, and more.
+- Grid layout showcasing various sections of the website, including courseware catalogue, data science learning path, newsletter, and more.
 - Colourful grid displaying different courses and products offered by Logical Operations.
 - Purple section highlighting recent news articles, whitepapers, blog posts, and certifications.
 
